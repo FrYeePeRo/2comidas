@@ -1,5 +1,15 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
+import router from './router'
 
-createApp(App).mount('#app')
+// Bootstrap CSS y JS
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+
+const app = createApp(App)
+
+app.use(router)
+app.mount('#app')
+
+console.log('🍔 Antaurus App iniciada con Vue 3 + Bootstrap 5')
