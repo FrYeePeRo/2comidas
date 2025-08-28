@@ -1,14 +1,22 @@
-# dependencias
-/node_modules
+# Dependencias
+node_modules/
 
-# build de producción
-/dist
+# Build output
+dist/
+dist-ssr/
+*.local
 
-# logs
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# sistema
-.DS_Store
-Thumbs.db
+# Directorios temporales de Vite
+.vite
+.vite-temp
